@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+        <h1>JavaScript Quiz</h1> 
+        
+        <div class="container">
+            <div>
+            <div class="column">
+              <p>1) Which of the following can be used to call a JavaScript Code Snippet?</p>
+              
+                <input type="radio" name="radio" id="correct1" >
+                <span id="green">Function/Method </span><br>
+              
+                <input type="radio" name="radio">
+                Triggering Event <br>
+              
+                <input type="radio" name="radio">
+                 Preprocessor <br>
+              
+                <input type="radio" name="radio">
+                 RMI <br>
+             
+              
+            </div>
+            <div class="column">
+              <p>2) Which of the following keywords is used to define a variable in Javascript?
+              </p>
+              
+                <input type="radio"  name="radio2" id="correct2">
+                <span id="green">var </span><br>
+              
+                <input type="radio" name="radio2">
+                let <br>
+              
+                <input type="radio" name="radio2">
+                Both A and B <br>
+              
+                <input type="radio" name="radio2">
+                None of the above <br>
+              
+            </div>
+
+            <div class="column">
+              <p>3) What is the use of the noscript tag in Javascript?</p>
+              
+                <input type="radio"  name="radio3" id="correct3">
+                <span id="green">The contents are displayed by non-JS-based browsers </span><br>
+              
+                <input type="radio" name="radio3">
+                Clears all the cookies and cache <br>
+              
+                <input type="radio" name="radio3">
+                 Both A and B <br>
+              
+                <input type="radio" name="radio3">
+                None of the above <br>
+              
+            </div>
+            </div>
+
+            <div>
+            <div class="column">
+              <p> 
+                4) How are objects compared when they are checked with the strict equality operator?</p>
+              
+                <input type="radio"  name="radio4">
+                 The contents of the objects are compared <br>
+              
+                <input type="radio" name="radio4" id="correct4">
+                <span id="green">Their references are compared </span><br>
+              
+                <input type="radio" name="radio4">
+                Both A and B <br>
+              
+                <input type="radio" name="radio4">
+                None of the above <br>
+              
+            </div>
+
+            <div class="column">
+              <p>5) How to stop an interval timer in Javascript?</p>
+              
+                <input type="radio"  name="radio5" id="correct5">
+                <span id="green">clearInterval </span><br>
+              
+                <input type="radio" name="radio5">
+                clearTimer <br>
+              
+                <input type="radio" name="radio5">
+                intervalOver <br>
+              
+                <input type="radio" name="radio5">
+                 None of the above <br>
+              
+            </div>
+
+            <div class="column">
+              <p>6) What keyword is used to declare an asynchronous function in Javascript?</p>
+              
+                <input type="radio"  name="radio6" id="correct6">
+                <span id="green">async </span><br>
+              
+                <input type="radio" name="radio6">
+                await <br>
+              
+                <input type="radio" name="radio6">
+                setTimeout <br>
+             
+                <input type="radio" name="radio6">
+                None of the above <br>
+              
+            </div>
+            </div>
+
+            <div>
+            <div class="column">
+              <p>7) Which of the following is not a Javascript framework?</p>
+              
+                <input type="radio"  name="radio7">
+                Node <br>
+              
+                <input type="radio" name="radio7">
+                Vue <br>
+              
+                <input type="radio" name="radio7">
+                React <br>
+              
+                <input type="radio" name="radio7" id="correct7">
+                <span id="green"> Cassandra </span><br>
+              
+            </div>
+
+            <div class="column">
+              <p>8) Which of the following are closures in Javascript?</p>
+              
+                <input type="radio"  name="radio8">
+                Variables <br>
+              
+                <input type="radio" name="radio8">
+                Functions <br>
+              
+                <input type="radio" name="radio8">
+                Objects <br>
+              
+                <input type="radio" name="radio8" id="correct8">
+                <span id="green">All of the above </span><br>
+              
+            </div>
+
+            <div class="column">
+              <p>9) Which of the following methods can be used to display data in some form using Javascript?
+              </p>
+              
+                <input type="radio"  name="radio9">
+                document.write() <br>
+             
+              
+                <input type="radio" name="radio9">
+                console.log() <br>
+              
+                <input type="radio" name="radio9">
+                window.alert() <br>
+              
+                <input type="radio" name="radio9" id="correct9">
+                <span id="green"> All of the above </span><br>
+              
+            </div>
+            </div>
+          </div>
+
+          <div class="btn"><button id="btn">Submit answers</button></div>
+          
+
+          <div id="blocker">
+            <h1>You have to answer all questions!</h1>
+            <img id="img" onclick="myFunction()" src="img/close icon.png">
+          </div>
+          <div id="scorer">
+            <h1>Your score is <span id="score"></span> </h1>
+            <img id="img" onclick="myFunction()" src="img/close icon.png">
+          </div>
+    </main>
+	<script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
